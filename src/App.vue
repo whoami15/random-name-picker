@@ -8,7 +8,7 @@ import NameDisplay from './components/NameDisplay.vue'
 import NameForm from './components/NameForm.vue'
 import Winner from './components/Winner.vue'
 import Winners from './components/Winners.vue'
-import TheFooter from './components/Footer.vue'
+import TheFooter from './components/TheFooter.vue'
 
 const names = ref([])
 const entries = ref(0)
@@ -79,11 +79,13 @@ const pickWinner = () => {
       <div
         class="grid grid-cols-1 divide-y-2 divide-black border-b-2 border-b-black md:grid-cols-2 md:divide-x-2 md:divide-y-0"
       >
-        <div class="flex flex-col justify-start gap-12 bg-white p-8 lg:p-12">
+        <div class="flex flex-col justify-start gap-12 bg-white px-4 py-12 sm:p-8 lg:p-12 lg:pl-32">
           <NameForm @start-draw="startDraw" :isDrawing />
         </div>
 
-        <div class="flex flex-col justify-start gap-8 bg-lila-200 p-8 lg:p-12">
+        <div
+          class="flex flex-col justify-start gap-8 bg-lila-200 px-4 py-12 sm:p-8 lg:p-12 lg:pr-32"
+        >
           <div class="border-2 border-black bg-white p-4 shadow-[7px_7px_0px_0px_rgba(0,0,0)]">
             <NameDisplay :names :isDrawing :duration />
           </div>
@@ -110,3 +112,4 @@ const pickWinner = () => {
   opacity: 0;
 }
 </style>
+./components/TheFooter.vue

@@ -36,7 +36,7 @@ onMounted(() => {
       <li
         v-for="(item, index) in winners"
         :key="index"
-        class="flex justify-between overflow-hidden border border-gray-300 p-4 shadow-sm transition-all duration-150 ease-in-out hover:!skew-y-0 sm:px-6"
+        class="flex flex-col overflow-hidden border border-gray-300 p-4 shadow-sm transition-all duration-150 ease-in-out hover:!skew-y-0 sm:px-6"
         :style="`transform: skewY(${(Math.random() * 1.5 - 0.9).toFixed(2)}deg)`"
       >
         <span class="uppercase">{{ item.name }}</span>
