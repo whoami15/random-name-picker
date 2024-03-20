@@ -112,4 +112,3 @@ const pickWinner = () => {
   opacity: 0;
 }
 </style>
-./components/TheFooter.vue
